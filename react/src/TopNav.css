@@ -1,0 +1,40 @@
+.topnav {
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 50px;
+	font-family: 'Passion One', sans-serif;
+	font-weight: 400;
+}
+
+.topnav ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.topnav ul li {
+	display: inline;
+	font-size: 24px;
+}
+
+.topnav ul li a {
+	padding: 0 10px;
+	width: 60px;
+	text-decoration: none;
+	color: #0076B6;
+}
+
+.topnav ul li a:hover {
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #B0B7BC, 1px -1px 0 #B0B7BC, -1px -1px 0 #B0B7BC, -1px 1px 0 #B0B7BC;
+}
+
+/*
+@media only screen and (min-device-width: 400px) {
+    body { 
+        background-image: url('img_flowers.jpg'); 
+    }
+}
+*/
