@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: url(https://s3.amazonaws.com/perjesi-info/perjesi-stormtrooper-snowblower.gif);
+  background-size: 100% 100%;
 }
 
 .App-logo {
