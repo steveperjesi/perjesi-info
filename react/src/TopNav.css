@@ -1,4 +1,4 @@
-.topnav {
+/*.topnav {
 	background-color: #fff;
 	position: absolute;
 	top: 0;
@@ -29,8 +29,39 @@
 .topnav ul li a:hover {
 	text-decoration: none;
 	text-shadow: 1px 1px 0 #B0B7BC, 1px -1px 0 #B0B7BC, -1px -1px 0 #B0B7BC, -1px 1px 0 #B0B7BC;
+}*/
+.nav {
+	list-style: none;
 }
 
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.navbar ul li {
+	display: inline;
+	padding: 0 20px;
+}
+
+.navbar ul li a {
+	display: inline;
+	text-decoration: none;
+	color: #0076B6;
+	font-weight: 700;
+}
+
+.navbar ul li a:hover {
+	text-decoration: none;
+	color: #B0B7BC;
+	/*text-shadow: 1px 1px 0 #B0B7BC, 1px -1px 0 #B0B7BC, -1px -1px 0 #B0B7BC, -1px 1px 0 #B0B7BC;*/
+}
+
+.navbar-nav {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
 /*
 @media only screen and (min-device-width: 400px) {
     body { 
