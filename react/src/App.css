@@ -1,5 +1,7 @@
 body {
-  background-image: url(https://s3.amazonaws.com/perjesi-info/perjesi-stormtrooper-snowblower.gif);
+  /*background-image: url(https://s3.amazonaws.com/perjesi-info/perjesi-stormtrooper-snowblower.gif);*/
+  background-image: url(https://s3.amazonaws.com/perjesi-info/night-sky.jpg);
+  background-attachment: fixed;
   background-size: 100% 100%;
 }
 
@@ -10,7 +12,7 @@ body {
 
 .App-header {
   /* background-color: #282c34; */
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   display: flex;
   flex-direction: column;
   align-items: center;
