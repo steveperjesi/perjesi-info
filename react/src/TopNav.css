@@ -1,71 +1,118 @@
-/*.topnav {
-	background-color: #fff;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
+.topnav {
+	font-family: 'Passion One', sans-serif !important;
+	background-color: #000;
 	height: 50px;
-	font-family: 'Passion One', sans-serif;
-	font-weight: 400;
-}
-
-.topnav ul {
-	list-style-type: none;
-	margin: 0;
-}
-
-.topnav ul li {
-	display: inline;
+	font-weight: normal;
 	font-size: 24px;
-}
-
-.topnav ul li a {
-	padding: 0 10px;
-	width: 60px;
-	text-decoration: none;
-	color: #0076B6;
-}
-
-.topnav ul li a:hover {
-	text-decoration: none;
-	text-shadow: 1px 1px 0 #B0B7BC, 1px -1px 0 #B0B7BC, -1px -1px 0 #B0B7BC, -1px 1px 0 #B0B7BC;
-}*/
-.nav {
-	list-style: none;
+	opacity: 0.75;
+	border: unset;
+	text-align: left
 }
 
 .navbar ul {
 	list-style-type: none;
-	margin: 0;
+	margin-top: 8px;
 }
 
 .navbar ul li {
 	display: inline;
 	padding: 0 20px;
+	margin-top: 7px;
 }
 
 .navbar ul li a {
 	display: inline;
 	text-decoration: none;
-	color: #0076B6;
-	font-weight: 700;
+	color: #fff !important;
+	font-weight: 100;
 }
 
 .navbar ul li a:hover {
 	text-decoration: none;
-	color: #B0B7BC;
+	color: #B0B7BC !important;
+	/*color: #fff !important;*/
 	/*text-shadow: 1px 1px 0 #B0B7BC, 1px -1px 0 #B0B7BC, -1px -1px 0 #B0B7BC, -1px 1px 0 #B0B7BC;*/
 }
 
-.navbar-nav {
+.navbar-default .navbar-nav > li > a {
+	color: #fff !important;
+
+}
+
+.navbar-nav, .dropdown-menu {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+	color: #fff !important;
 }
-/*
-@media only screen and (min-device-width: 400px) {
-    body { 
-        background-image: url('img_flowers.jpg'); 
-    }
+
+/* non-mobile navbar active */
+.navbar-active {
+	text-decoration: none !important;
+	background-color: #333;
+	padding: 15px;
 }
-*/
+
+/* mobile dropdown active */
+.dropdown-menu .navbar-active {
+	text-decoration: none !important;
+	color: #ccc;
+	padding: unset;
+}
+
+.dropdown-menu {
+	font-family: 'Passion One', sans-serif !important;
+	background-color: #333;
+	/*line-height: 2.5;*/
+	line-height: 2.2;
+	color: #fff !important;
+
+}
+
+.dropdown-menu > ul {
+	list-style-type: none;
+	/*margin-top: 8px;*/
+	font-size: 24px;
+	padding-inline-start: 20px;
+}
+
+.dropdown-menu > ul > li > a {
+	display: inline;
+	font-size: 24px;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: unset;
+	color: #eee;
+}
+
+.dropdown-menu > ul > li > a:hover {
+	color: #999;
+	background-color: unset !important;
+	text-decoration: none;
+}
+
+.dropdown > button {
+	font-family: 'Passion One', sans-serif !important;
+}
+
+.page-title-heading {
+	margin-top: 15px;
+	margin-left: 15px;
+	font-size: 11vw;
+	text-shadow: 1px 1px 0 #666, 1px 1px 0 #666;
+}
+
+.dropdown-text {
+	font-size: 20px;
+}
+
+.rotate-90 {
+	transform: rotate(90deg);
+	letter-spacing: -0.5px;
+}
+
+.button-inverse {
+	color: #fff;
+	background-color: #555;
+	border-color: #666;
+}
