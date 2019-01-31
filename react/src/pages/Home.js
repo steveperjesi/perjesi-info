@@ -38,30 +38,32 @@ export class Home extends Component {
 				<Row>
 					<Col lg={11} xs={9} className={ `section container welcome ${clss_top} `} >
 						<h2>Meet {name}!!</h2>
+					
+						<Col lgHidden mdHidden smHidden xs={12} className="text-center">
+							{shades}
+						</Col>
+						<Col xsHidden lg={5} md={5} sm={6} className="text-right">
+							{shades}
+						</Col>
+
+						<Col lgHidden mdHidden smHidden xs={12} className="text-center" style={{paddingTop: "35px"}}>
+							{sm_button}
+						</Col>
+
+						<Col xsHidden lg={7} md={7} sm={6} className="text-center">
+							<Popover id="welcome-bubble" placement="right" style={{maxWidth: "350px"}}>
+								<h1>Hi there!</h1>
+								<div style={{display: "flex"}}>{lg_button}</div>
+							</Popover>
+						</Col>
+
+						<Col xs={12} style={{color: "#fff"}} className="text-center text-3d">
+							<h3>* Responsive Mode Enabled *</h3>
+							<h4>(Just like me, looks great on any device!)</h4>
+						</Col>
+
 					</Col>
 
-					<Col lgHidden mdHidden smHidden xs={12} className="text-center">
-						{shades}
-					</Col>
-					<Col xsHidden lg={5} md={5} sm={6} className="text-right">
-						{shades}
-					</Col>
-
-					<Col lgHidden mdHidden smHidden xs={12} className="text-center" style={{paddingTop: "35px"}}>
-						{sm_button}
-					</Col>
-
-					<Col xsHidden lg={7} md={7} sm={6} className="text-center">
-						<Popover id="welcome-bubble" placement="right" style={{maxWidth: "350px"}}>
-							<h1>Hi there!</h1>
-							<div style={{display: "flex"}}>{lg_button}</div>
-						</Popover>
-					</Col>
-
-					<Col xs={12} style={{color: "#fff"}} className="text-center text-3d">
-						<h3>* Responsive Mode Enabled *</h3>
-						<h4>(Just like me, looks great on any device!)</h4>
-					</Col>
 				</Row>
 			</Grid>
 		);
