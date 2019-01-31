@@ -1,0 +1,195 @@
+/* 
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+The animation shorthand CSS property sets an animated transition between styles. It is a shorthand for:
+ - animation-name
+ - animation-duration
+ - animation-timing-function
+ - animation-delay
+ - animation-iteration-count
+ - animation-direction
+ - animation-fill-mode
+ - animation-play-state.
+*/
+
+.slide-in {
+	/*position: relative;*/
+	animation-duration: 1s;
+	animation-name: easein;
+}
+
+.slide-out {
+	animation-duration: 1s;
+	animation-name: easeout;
+}
+
+.space {
+	animation-delay: 1.1s;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-name: easeright;
+}
+
+.nospace {
+	margin-left: 5vh;
+	margin-bottom: 10px;
+}
+
+.zoomin-spin {
+	/*animation-delay: 2.1s;*/
+	animation-delay: 1.0s;
+	animation-duration: 2s;
+	animation-fill-mode: backwards;
+	animation-name: zoomin-spin;
+}
+
+/* Keyframes */
+/* -------------------------------------- */
+
+/* easin */
+
+@-webkit-keyframes easein {
+	from {
+		left: -2500px;
+	}
+	to {
+		left: 5%;
+	}
+}
+@-moz-keyframes easein {
+	from {
+		left: -2500px;
+	}
+	to {
+		left: 5%;
+	}
+}
+@-o-keyframes easein {
+	from {
+		left: -2500px;
+	}
+	to {
+		left: 5%;
+	}
+}
+@keyframes easein {
+	from {
+		left: -2500px;
+	}
+	to {
+		left: 5%;
+	}
+}
+
+/* easeout */
+
+@-webkit-keyframes easeout {
+	from {
+		left: 0;
+	}
+	to {
+		left: -2500px;
+	}
+}
+@-moz-keyframes easeout {
+	from {
+		left: 0;
+	}
+	to {
+		left: -2500px;
+	}
+}
+@-o-keyframes easeout {
+	from {
+		left: 0;
+	}
+	to {
+		left: -2500px;
+	}
+}
+@keyframes easeout {
+	from {
+		left: 0;
+	}
+	to {
+		left: -2500px;
+	}
+}
+
+/* ease up a little */
+
+@-webkit-keyframes easeright
+ {
+	from {
+		margin-top: inherit;
+	}
+	to {
+		margin-left: 5vh;
+		margin-bottom: 10px;
+	}
+}
+@-moz-keyframes easeright
+ {
+	from {
+		margin-top: inherit;
+	}
+	to {
+		margin-left: 5vh;
+		margin-bottom: 10px;
+	}
+}
+@-o-keyframes easeright
+ {
+	from {
+		margin-top: inherit;
+	}
+	to {
+		margin-left: 5vh;
+		margin-bottom: 10px;
+	}
+}
+/* chrome */
+@keyframes easeright
+ {
+	from {
+		margin-top: inherit;
+	}
+	to {
+		margin-left: 5vh;
+		margin-bottom: 10px;
+	}
+}
+
+/* zoom in */
+
+@-webkit-keyframes zoomin-spin {
+	from {
+		transform: scale(0,0) rotate(10deg);
+	}
+	to {
+		transform: scale(1,1) rotate(360deg);
+	}
+}
+@-moz-keyframes zoomin-spin {
+	from {
+		transform: scale(0,0) rotate(10deg);
+	}
+	to {
+		transform: scale(1,1) rotate(360deg);
+	}
+}
+@-o-keyframes zoomin-spin {
+	from {
+		transform: scale(0,0) rotate(10deg);
+	}
+	to {
+		transform: scale(1,1) rotate(360deg);
+	}
+}
+@keyframes zoomin-spin {
+	from {
+		transform: scale(0,0) rotate(10deg);
+	}
+	to {
+		transform: scale(1,1) rotate(360deg);
+	}
+}
