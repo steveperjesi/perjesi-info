@@ -1,27 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Passion+One:400,700');
-@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
-/*@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');*/
+@import url('https://fonts.googleapis.com/css?family=Roboto|Passion+One:400,700|Kanit:200,300,400,900');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+/*@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');*/
 
-html {
-	font-family: 'Roboto', sans-serif;
+* {
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: 'Passion One', sans-serif !important;*/
 }
 
 body {
+	font-family: 'Kanit', sans-serif !important;
 	/*background-image: url(https://s3.amazonaws.com/perjesi-info/perjesi-stormtrooper-snowblower.gif);*/
 	background-image: url(https://s3.amazonaws.com/perjesi-info/night-sky.jpg);
 	background-repeat: no-repeat;
+	min-height: 91vh;
 }
 
-.container {
-	padding: 12px;
+#App {
+	min-height: 100%;
+	position: relative;
+}
+
+.section {
+	padding: 20px;
 	border: 1px solid #888;
 	border-radius: 4px;
-	background-color: #fff;
-	opacity: 0.8;
+	background: rgba(245, 245, 245, 0.8);
+	width: 90%;
+	margin: auto;
+	overflow: auto;
+	overflow-x: hidden;
+	height: 50%;
+	left: 5%;	/* dif width percentage / 2 = left percentage ((100% - 90%) / 2 = 5%)  */
+	/*left: 5%; this has been moved to the "easein" animation to stay fluid */
 }
 
-.container:hover, .container:focus {
-	opacity: 0.83;
+.section:hover, .section:focus {
+	background: rgba(255, 255, 255, 0.92);
+	-webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: background 0.5s;
+}
+
+.section h2 {
+	font-size: 48px;
+	margin-top: -5px;
 }
 
 .welcome, .welcome:hover, .welcome:focus {
@@ -32,31 +53,260 @@ body {
 	font-size: 56px;
 	opacity: 1.0;
 	text-align: center;
+}
+
+.text-3d {
 	text-shadow: 2px 2px 0 #000;
 }
 
+.section p {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.4;
+	text-align: justify;
+    padding-bottom: 20px;
+}
+
+.section > p > a {
+	margin: 0 4px;
+	font-weight: 400;
+	color: #ff8000;	/* orange */
+}
+
 h1 {
-	font-size: 72px;
+	font-size: 64px;
 	font-weight: 900;
 }
 
 .footer {
-	position: absolute;
+	font-family: 'Roboto', sans-serif !important;
+	position: fixed;
 	bottom: 0;
-	left: 0;
 	width: 100%;
-	height: 50px;
+	height: 80px;
+	max-height: 80px;
 	padding: 10px;
 	margin: auto;
 	color: #B0B7BC;
+	background-color: #0d0d0d;
 	text-align: center;
 }
 
-.space {
-	margin-top: 12%;
+.footer-nav {
+	border-color: transparent;
+	background-color: unset;
+}
+
+.footer-nav a {
+	color: #B0B7BC;
+	margin: auto 10px;
+}
+
+.footer-nav a:hover {
+	opacity: 0.5;
+}
+
+.copyright {
+	padding-top: 7px;
 }
 
 .hidden {
 	display: none;
 }
 
+button .close {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	color: #fff;
+}
+
+.steve-shades {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-image: url(https://s3.amazonaws.com/perjesi-info/perjesi-shades.jpg);
+	background-repeat: no-repeat;
+	border: 2px solid #000;
+}
+
+.steve-shades:hover {
+	text-shadow: 1px 1px 0 #666, 1px 1px 0 #666;
+}
+
+.steve-air-guitar {
+	background-image: url(https://s3.amazonaws.com/perjesi-info/perjesi-death-guitar-shred.gif);
+	background-repeat: no-repeat;
+	background-size: 100px 112.5px;
+	width: 100px;
+	height: 112.5px;
+	box-shadow: 2px 2px 8px #888;
+	display: inline-block;
+	/*margin-right: 50px;*/
+}
+
+ul.list-brief {
+	position: relative;
+	list-style-type: circle;
+	/*padding-top: 10px;*/
+	/*left: 50px;*/
+}
+
+ul.list-brief li {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.line-sep {
+	width: 95%;
+	height: 1px;
+	background-color: #888;
+	margin: 0 auto 25px;
+}
+
+/* Make sure to prioritize over popovers */
+.modal-content {
+	background-image: url(https://s3.amazonaws.com/perjesi-info/perjesi-stormtrooper-snowblower.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.modal-header {
+	/*color: #B0B7BC;*/
+	color: #fff;
+	font-weight: 900;
+	background: rgba(13, 13, 13, 0.25);
+	border-bottom: unset;
+}
+
+.modal-header button {
+	font-family: ''
+}
+
+.modal {
+	z-index: 2000 !important;
+	width: 90% !important;
+	margin: auto;
+}
+
+.modal svg {
+	margin: 0 5px;
+}
+
+.modal code {
+	background: rgba(255, 255, 255, 0.7);
+	color: #337ab7;
+}
+
+.modal ul {
+	margin-left: -20px;
+}
+
+.modal ul li {
+	margin-left: 20px;
+}
+
+.modal-body h2 {
+	margin-top: 0;
+}
+
+.modal-footer {
+	color: #B0B7BC;
+	background: rgba(13, 13, 13, 0.25);
+	border-top: unset;
+}
+
+/* Icon made by https://www.freepik.com from https://www.flaticon.com/ */
+.hood-open-icon {
+	width: 24px;
+	height: 20px;
+	background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDM3LDIxMi4xNmgtOC45NzVsLTUwLTYwSDIwMy4zNjRsLTY1Ljk4Niw1Ny43MzhMMzIuMzIsMTA0Ljg0bC0yMS4yMTMsMjEuMjEzbDk2LjEwNiw5Ni4xMDZINzAgICAgYy0zOC41OTgsMC03MCwzMS40MDItNzAsNzBjMCwzOC41NjMsMzEuMzQ3LDY5Ljk0Miw2OS44OTgsNjkuOTk3YzYuNjc3LDI1Ljg1MSwzMC4xOTUsNDUuMDAzLDU4LjEwMiw0NS4wMDMgICAgYzI3LjkwNiwwLDUxLjQyNC0xOS4xNTEsNTguMTAxLTQ1aDE0Ni43OTdjNi42NzgsMjUuODQ5LDMwLjE5NSw0NSw1OC4xMDEsNDVjMjguMjc1LDAsNTIuMDI5LTE5LjY2Niw1OC4zNDItNDYuMDMzICAgIEM0ODQuODQzLDM1NS4yMjEsNTEyLDMyNC4zMTEsNTEyLDI4Ny4xNkM1MTIsMjQ1LjgwNSw0NzguMzU1LDIxMi4xNiw0MzcsMjEyLjE2eiBNMTI4LDM3Ny4xNmMtMTYuNTQyLDAtMzAtMTMuNDU4LTMwLTMwICAgIHMxMy40NTgtMzAsMzAtMzBzMzAsMTMuNDU4LDMwLDMwUzE0NC41NDIsMzc3LjE2LDEyOCwzNzcuMTZ6IE0zOTEsMzc3LjE2Yy0xNi41NDIsMC0zMC0xMy40NTgtMzAtMzBzMTMuNDU4LTMwLDMwLTMwICAgIHMzMCwxMy40NTgsMzAsMzBTNDA3LjU0MiwzNzcuMTYsMzkxLDM3Ny4xNnogTTQ0OC42NjMsMzMwLjYxOGMtNy4yMDEtMjUuMDYyLTMwLjMxNi00My40NTktNTcuNjYzLTQzLjQ1OSAgICBjLTI3LjkwNiwwLTUxLjQyNCwxOS4xNTEtNTguMTAxLDQ1SDE4Ni4xMDFjLTYuNjc4LTI1Ljg0OS0zMC4xOTUtNDUtNTguMTAxLTQ1Yy0yNy45MDUsMC01MS40MjIsMTkuMTQ5LTU4LjEwMSw0NC45OTcgICAgQzQ3Ljg5LDMzMi4xMDIsMzAsMzE0LjE4MiwzMCwyOTIuMTZjMC0yMi4wNTYsMTcuOTQ0LTQwLDQwLTQwaDY0LjYzNmw4MC03MGgxNDkuMzM4bDUwLDYwSDQzN2MyNC44MTMsMCw0NSwyMC4xODcsNDUsNDUgICAgQzQ4MiwzMDcuOTQsNDY3LjgzOSwzMjUuNDY3LDQ0OC42NjMsMzMwLjYxOHoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	margin: 0 8px;
+	position: relative;
+	color: #333 !important;
+	top: 5px;
+	filter: invert(16%) sepia(14%) saturate(18%) hue-rotate(334deg) brightness(99%) contrast(89%);
+}
+
+.hood-open-icon:hover {
+	cursor: pointer;
+	filter: invert(49%) sepia(15%) saturate(113%) hue-rotate(162deg) brightness(90%) contrast(91%);	/* hover */
+}
+
+.bootstrap-react-icon {
+	background-image: url(data:image/png;base64,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);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin: 0 5px;
+	position: relative;
+	top: 2px;
+}
+
+/* lightweight the badge */
+.font-weight-normal span {
+	font-weight: normal !important;
+}
+
+.border-thin {
+	border: 0.5px solid #888;
+}
+
+.badge {
+	border: 1px solid #666;
+	margin: 1px;
+}
+
+.skills-grill {
+	border: 1px solid #000;
+}
+
+.article-intro-image {
+	width: 64px;
+	border-radius: 5px;
+	margin: 5px;
+	margin-left: 0;
+	float: left;
+}
+
+.television-retro {
+	position: relative;
+	background-image: url(https://s3.amazonaws.com/perjesi-info/tv/retro-tv-bg.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 333px;
+	height: 214px;
+}
+
+.tv-screen {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	width: 190px;
+	top: -18px;
+	left: -35px;
+}
+
+.clip-bg-container {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 185px;
+}
+
+.whatd-you-do {
+	position: relative;
+	background-image: url(https://s3.amazonaws.com/perjesi-info/whatd_you_do.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: auto;
+	width: 320px;
+	height: 180px;
+}
