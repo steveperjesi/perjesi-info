@@ -86,10 +86,10 @@ export class Skills extends Component {
 						</Row>
 						<Row><Col xs={12}>&nbsp;</Col></Row>
 						<Row>
-							<Col xs={2} lg={1}>
+							<Col xs={3} lg={1}>
 								<img src="https://s3.amazonaws.com/perjesi-info/smoking-grill-sm.gif" alt="smoking grill" className="article-intro-image skills-grill" />
 							</Col>
-							<Col xs={10}>
+							<Col xs={9}>
 								<p>
 									My skills also stretch beyond banging on a keyboard. I'm an avid charcoal griller and smoker of pork, 
 									chicken, and brisket.
