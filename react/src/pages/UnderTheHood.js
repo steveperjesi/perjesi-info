@@ -23,10 +23,6 @@ export class UnderTheHood extends Component {
 		this.setState({ showModal: true });
 	}
 
-	getLabel() {
-		return this.props.label;
-	}
-
 	createLink(label) {
 		return (
 			<div className="hood-open-icon" title="under the hood" onClick={this.open}></div>
