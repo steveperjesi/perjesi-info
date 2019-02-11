@@ -27,7 +27,7 @@ body {
 	margin: auto;
 	overflow: auto;
 	overflow-x: hidden;
-	height: 50%;
+	height: 100vh;
 	left: 5%;	/* dif width percentage / 2 = left percentage ((100% - 90%) / 2 = 5%)  */
 	/*left: 5%; this has been moved to the "easein" animation to stay fluid */
 }
@@ -173,9 +173,6 @@ ul.list-brief li {
 
 @media (max-width: 576px) {
 	.modal-content {
-		background-image: url(https://s3.amazonaws.com/perjesi-info/perjesi-stormtrooper-snowblower.gif);
-		background-repeat: no-repeat;
-		background-size: cover;
 		background-position: 50%;
 	}	
 }
@@ -295,6 +292,68 @@ ul.list-brief li {
 	height: 214px;
 }
 
+@media only screen and (width < 376px) {
+	.tv-resize {
+		transform: scale(0.70);
+		top: -50px;
+		left: -30px;
+		margin-bottom: -90px;
+		padding-top: 30px;
+	}
+	.tv-remote {
+		transform: scale(1.40);
+		position: relative;
+		left: 75px;
+		top: 30px;
+	}
+}
+
+@media only screen and (width >= 376px) {
+	.tv-resize {
+		transform: scale(0.70);
+		left: -30px;
+		margin-bottom: -90px;
+	}
+	.tv-remote {
+		position: relative;
+		right: -90px;
+	}
+}
+
+@media only screen and (width >= 730px) {
+	.tv-resize {
+		transform: unset;
+		margin-left: 50px;
+	}
+	.tv-remote {
+		position: relative;
+		right: 60px;
+	}
+}
+
+@media only screen and (width >= 1024px) {
+	.tv-resize {
+		transform: unset;
+	}
+	.tv-remote {
+		position: relative;
+		right: unset;
+		left: -160px;
+	}
+}
+
+@media only screen and (width >= 1366px) {
+	.tv-resize {
+		transform: unset;
+	}
+	.tv-remote {
+		position: relative;
+		right: -120px;
+		left: unset;
+	}
+}
+
+
 .tv-screen {
 	position: relative;
 	display: table-cell;
@@ -309,6 +368,10 @@ ul.list-brief li {
 	background-repeat: no-repeat;
 	background-size: contain;
 	width: 185px;
+}
+
+.button-40 {
+	width: 40px;
 }
 
 .whatd-you-do {
