@@ -85,21 +85,25 @@ export class Fun extends Component {
 								<p>Every now and again my brain needs a rest. When not spending time with family and friends, I will
 								be found enjoying many different activities.</p>
 							</Col>
-							<Col lg={6} xs={12} xsOffset={1}>
-								<div className="clip-bg-container pull-left" style={{ backgroundImage: "url("+url+")" }}>
-									<div className="tv-screen">
-										<div className="television-retro"></div>
-									</div>
-								</div>
-								<div className="text-center">
-									<Button disabled={true}>Ch {idx + 1}</Button>
-									<div>
-										<Button onClick={this.clipUp}><Glyphicon glyph="triangle-top" /></Button>
-									</div>
-									<div>
-										<Button onClick={this.clipDown}><Glyphicon glyph="triangle-bottom" /></Button>
-									</div>
-								</div>
+							<Col lg={6} xs={12}>
+								<Row>
+									<Col xs={12} lg={7} className="tv-resize">
+										<div className="clip-bg-container pull-left" style={{ backgroundImage: "url("+url+")" }}>
+											<div className="tv-screen">
+												<div className="television-retro"></div>
+											</div>
+										</div>
+										<div className="text-center tv-remote">
+											<Button disabled={false}>Ch {idx + 1}</Button>
+											<div>
+												<Button onClick={this.clipUp} className="button-40"><Glyphicon glyph="triangle-top" /></Button>
+											</div>
+											<div>
+												<Button onClick={this.clipDown} className="button-40"><Glyphicon glyph="triangle-bottom" /></Button>
+											</div>
+										</div>
+									</Col>
+								</Row>
 							</Col>
 						</Row>
 					</Col>
