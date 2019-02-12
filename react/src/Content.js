@@ -5,7 +5,7 @@ import { ErrorPage } from "./partials/ErrorPage";
 import { camelize, capitalizeFirstLetter } from "./utils/Strings";
 
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-133572509-1');
+ReactGA.initialize('UA-133572509-1', { testMode: false });
 
 export class Content extends Component {
 	constructor(props) {
