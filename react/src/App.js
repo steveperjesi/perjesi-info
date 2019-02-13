@@ -32,8 +32,8 @@ const _base = {
 };
 
 const filterPage = function(page) {
-	page = page.replace("/", "");
-	return (page.length > 0) ? page : "home";
+	page = page && page.replace("/", "");
+	return (page && page.length > 0) ? page : "home";
 }
 
 export class App extends Component {
