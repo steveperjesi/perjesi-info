@@ -37,13 +37,13 @@ export class Now extends Component {
 								<p>
 								When I'm not banging on my keyboard, I can be found:
 								</p>
-								<div className="steve-air-guitar"></div>
-								<div style={{display: "inline-block", verticalAlign: "top"}}>
+								<div className="steve-air-guitar" style={{float: "left"}}></div>
+								<div style={{display: "flex", verticalAlign: "top"}}>
 									<ul className="list-brief">
 										<li>spending time with family</li>
 										<li>playing NES</li>
 										<li>driving</li>
-										<li>enjoying outside</li>
+										<li>enjoying the outdoors</li>
 									</ul>
 								</div>
 							</Col>
