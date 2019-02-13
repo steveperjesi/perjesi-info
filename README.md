@@ -1,6 +1,8 @@
 # perjesi-info
-Just a little public react sandbox
+Greetings!
 
-`npm install`
+Welcome to my little react/node personal site. Take a look around, make comments, suggestions, etc. 
 
-`npm start`
+`./scripts/start install`
+
+`./scripts/start`
