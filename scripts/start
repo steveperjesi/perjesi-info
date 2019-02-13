@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# set -e
+
+BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+
+CUR_DIR=`pwd`
+
+cd $BASE_DIR/react/
+
+clear 
+echo ""
+#echo "Hold onto your butts..."
+echo "Commence primary ignition..."
+echo ""
+
+if [[ "$1" == "build" ]]; then 
+  echo "building..."
+  npm run build
+  exit
+fi 
+
+if [[ "$1" == "install" ]]; then 
+  echo "installing..."
+  npm install
+  exit
+fi 
+
+echo "stand by..."
+
+npm start
+
